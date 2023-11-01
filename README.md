@@ -2,8 +2,11 @@
 Personal repository for linux commands
 
 
-netstat -rn {Show active network disponibility}
+netstat -rn 
+>Show active network disponibility
 
-tree  {Make a tree for folder path}
+tree
+>Make a tree for folder path
 
-arp -a IP_ADDRESS {Show MAC from IP LAN}
+arp -a IP_ADDRESS 
+>Show MAC from IP LAN
