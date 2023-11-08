@@ -1,6 +1,7 @@
 # Linux-usseful-commands
 Personal repository for linux commands
 
+## GENERAL
 
 netstat -rn 
 
@@ -99,5 +100,34 @@ SITE.COM\robots.txt
 > Used for disallowed paths
 
 ![image](https://github.com/esmeraldino-lk/Linux-usseful-commands/assets/133903212/afd67f3c-c18e-4968-8ef2-f08c8b9c360f)
+
+
+<!--FINAL SCANNING-->
+
+
+## Exploit
+
+### SEARCH EXPLOIT
+
+go-exploitdb
+
+> install-> sudo apt install go-exploitdb -y
+>
+> usage:
+>
+> go-exploitdb search openssh 7.2
+
+ ![image](https://github.com/esmeraldino-lk/Linux-usseful-commands/assets/133903212/184015ec-83a4-4f7f-8ebc-8b6f541193ef)
+
+### METASPLOIT
+
+msfconsole
+
+>Main package for search and test publics exploits
+
+Install on Ubuntu:
+´´´
+sudo apt-get install build-essential zlib1g zlib1g-dev libxml2 libxml2-dev libxslt-dev locate libreadline6-dev libcurl4-openssl-dev git-core autoconf curl postgresql postgresql-contrib libpq-dev libapr1 libaprutil1 libsvn1 libpcap-dev -y && git clone https://github.com/rapid7/metasploit-framework.git && cd metasploit-framework && sudo bash -c 'for MSF in $(ls msf*); do ln -s /usr/local/src/metasploit-framework/$MSF /usr/local/bin/$MSF;done' && sudo service postgresql start && sudo msfdb init
+´´´
 
 
