@@ -265,5 +265,11 @@ Hydra -v -t10 -l [LOGIN] -P [WORDLIST] [URL] -s [PORT]
 >
 >-P pass wordlist
 
+## Cryptography
 
+### HASHES
+
+hashcat [HASH]
+
+Site: [hash](https://www.boxentriq.com/code-breaking/cipher-identifier)https://www.boxentriq.com/code-breaking/cipher-identifier
 
