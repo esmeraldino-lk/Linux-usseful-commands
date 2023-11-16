@@ -43,6 +43,11 @@ sort -u
 >Remove duplicate output
 
 
+alterar variaveis de ambiente linux
+
+>export $PATH="[PATH TO INCLUDE]"
+
+
 ## Scanning
 
 ### WEB SCAN
