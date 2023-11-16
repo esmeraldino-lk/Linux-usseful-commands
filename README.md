@@ -253,6 +253,12 @@ Python Server
 Search and download Linenum.sh and Linpeas.sh for Linux.
 Winpeas for windows.
 
+sudo -l 
+
+>for list sudo files not required to use root
+>
+>for list a c script, bash or other script, can overwrite it with BIN/BASH for scalation
+>
 
 ##  BRUTE FORCE
 
