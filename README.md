@@ -50,6 +50,35 @@ alterar variaveis de ambiente linux
 
 ## Scanning
 
+### ENUMERATION
+
+sudo nmap [IP] -sn -oA [OUTPUT FILE] -PE --reason 
+
+>for discover existent hosts. Non port scan for fast scan.
+
+nmap 10.129.2.28 -F -sU
+
+>UDP ports scan
+
+nmap 10.129.114.177 -PE -n -top-ports=1000
+
+>TCP fast scan TOP 1000
+
+
+>-sn	Disables port scanning.
+>
+>-oA host	Stores the results in all formats starting with the name 'host'.
+>
+>-PE	Performs the ping scan by using 'ICMP Echo requests' against the target.
+
+![image](https://github.com/esmeraldino-lk/Linux-usseful-commands/assets/133903212/a26a834b-b200-4191-aee3-3fd13d1138b6)
+
+
+**nmap [IP] -A**
+
+>get all info from IP
+
+
 ### WEB SCAN
 
 Whatweb http://94.237.62.2/
