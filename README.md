@@ -30,6 +30,9 @@ arp -a IP_ADDRESS
 
 ![image](https://github.com/esmeraldino-lk/Linux-usseful-commands/assets/133903212/d2fc4ff4-a3ae-4c20-bdec-2957ea4d78f2)
 
+netstat -tulpn | grep LISTEN
+
+>See what ports are listening
 
 script NAME
 
