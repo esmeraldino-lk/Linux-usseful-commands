@@ -3,8 +3,11 @@ Personal repository for linux commands
 
 ## General
 
-###Brazilian Wordlist
+Brazilian Wordlist
+
 https://github.com/BRDumps
+
+https://github.com/0xrdf/Brazilian-wordlist/blob/master/brazilPasswords.txt
 
 wc -l [file]
 
