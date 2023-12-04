@@ -3,6 +3,9 @@ Personal repository for linux commands
 
 ## General
 
+###Brazilian Wordlist
+https://github.com/BRDumps
+
 wc -l [file]
 
 >Show file lines
