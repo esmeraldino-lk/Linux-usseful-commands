@@ -4,11 +4,11 @@ Personal repository for linux commands
 ## General
 
 Brazilian Wordlist
-
+<sub>
 https://github.com/BRDumps
 
 https://github.com/0xrdf/Brazilian-wordlist/blob/master/brazilPasswords.txt
-
+</sub>
 wc -l [file]
 
 >Show file lines
