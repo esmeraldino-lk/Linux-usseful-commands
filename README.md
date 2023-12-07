@@ -4,6 +4,9 @@ Personal repository for linux commands
 
 ## GENERAL
 
+  🪙CVEs Template for Nuclei
+  https://github.com/ping-0day/templates
+
   Brazilian Wordlist
 
     
