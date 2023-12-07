@@ -7,6 +7,9 @@ Personal repository for linux commands
   🪙CVEs Template for Nuclei
   https://github.com/ping-0day/templates
 
+  HTTP 403,401 Bypass
+  https://github.com/carlospolop/fuzzhttpbypass
+
   Brazilian Wordlist
 
     
