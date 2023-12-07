@@ -8,7 +8,10 @@ Personal repository for linux commands
   https://github.com/ping-0day/templates
 
   HTTP 403,401 Bypass
+  
   https://github.com/carlospolop/fuzzhttpbypass
+
+  https://github.com/iamj0ker/bypass-403.git
 
   Brazilian Wordlist
 
