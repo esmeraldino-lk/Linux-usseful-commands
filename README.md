@@ -19,7 +19,10 @@ Personal repository for linux commands
     https://github.com/BRDumps
     
     https://github.com/0xrdf/Brazilian-wordlist/blob/master/brazilPasswords.txt
-    
+
+  hostnamectl OR uname -a
+
+    View Version of Linux 
 
   scp [USER]@[IP]:/path/to/file C:\path\to\destiny
 
