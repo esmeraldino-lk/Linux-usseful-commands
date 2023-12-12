@@ -20,6 +20,10 @@ Personal repository for linux commands
     
     https://github.com/0xrdf/Brazilian-wordlist/blob/master/brazilPasswords.txt
     
+
+  scp [USER]@[IP]:/path/to/file C:\path\to\destiny
+
+    Transfer via scp files
   
   wc -l [file]
   
