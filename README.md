@@ -197,8 +197,31 @@ Personal repository for linux commands
 
   ![image](https://github.com/esmeraldino-lk/Linux-usseful-commands/assets/133903212/84cc86d1-0d1a-4b83-9fcb-1b07f09385dd)
   
+  ### RPC SCAN
 
+  Dumping
+  
+    #/bin/sh
+    URL=""
+    impacket-rpcdump -p 593 $URL
+    impacket-rpcdump -p 445 $URL
+    impacket-rpcdump -p 443 $URL
+    impacket-rpcdump -p 139 $URL
+    impacket-rpcdump -p 135 $URL
+    echo 'finish'
 
+  Connecting without user and pass
+
+    rpcclient -U '' [IP]
+
+  Connecting with user and pass
+
+    rpcclient -U [User] -P [Passowrd] [IP]
+
+  Connected
+
+    [(https://hackinglethani.com/rpc-protocol/)](https://hackinglethani.com/rpc-protocol/)
+    
   
   ### SQL MAP
   
